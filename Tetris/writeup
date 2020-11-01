@@ -1,0 +1,6 @@
+Dear Professor Corwin,
+Here is what I found:
+
+As N grows large, the standard deviation settles to a value between 11.5 and 11.6 for a sample time of 10 seconds (see var_graph.png). If  we normalize by dividing by sqrt(T), this gives us a constant of proportionality of about 3.6. Since the variance appears to be convergent to a specific value, we can get a relatively good approximation of variance for large N by just using the variance for sufficiently large N (i.e. N = 1000). Additionally, since the rate of appearance of the pieces is proportional to the width, it is reasonable to predict that the rate of accumulation also converges to a fixed value. Therefore, it is likely that not only the variance plot, but also the bottom-left plot (the rate of accumulation vs. time) are roughly constant for large N. 
+
+However, one strange trend that I noticed for large N is that the variance appears to be growing slower than O(N) (see the attached plot for N=1000). It could be possible that I simply did not run the simulation for long enough to see the trend (although it would be computationally challenging for my computer to run it for significantly longer), or that there are some other factors in the growth that only exist for very large N. 
